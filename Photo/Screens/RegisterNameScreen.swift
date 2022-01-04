@@ -28,13 +28,7 @@ struct RegisterNameScreen: View {
             Button{
                 
             } label: {
-                Text("SIGN UP")
-                    .padding()
-                    .font(.system(size: 18, weight: .bold, design: .rounded))
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0)
-                    .foregroundColor(.white)
-                    .background(.black)
-                    .cornerRadius(8)
+                CustomText(text: "SIGN UP")
             }
             
             Text("By signing up, you agree to Photo's Terms of service and Privacy Policy.")

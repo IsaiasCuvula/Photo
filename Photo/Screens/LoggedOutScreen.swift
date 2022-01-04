@@ -23,12 +23,13 @@ struct LoggedOutScreen: View {
                     
                 } label: {
                     Text("LOG IN")
+                        .padding()
                         .foregroundColor(.black)
                         .font(.system(size: 16,weight: .bold, design: .rounded))
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0)
+                        .overlay(RoundedRectangle(cornerRadius: 8).stroke( Color.black, lineWidth: 2))
                 }
-                .padding()
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0)
-                .overlay(RoundedRectangle(cornerRadius: 8).stroke(lineWidth: 2))
+                
                 
                 Spacer()
                 
@@ -37,14 +38,9 @@ struct LoggedOutScreen: View {
                     //RegisterScreen()
                     
                 } label: {
-                    Text("REGISTER")
-                        .foregroundColor(.white)
-                        .font(.system(size: 16,weight: .bold, design: .rounded))
+                    CustomText(text: "REGISTER")
                 }
-                .padding()
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0)
-                .background(.black)
-                .cornerRadius(8)
+                
                 
                 
             }//HSTACK

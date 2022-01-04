@@ -11,7 +11,7 @@ struct LoginScreen: View {
     
     @State var emailLogin = ""
     @State var passwordLogin = ""
-    
+  //MARK: - BODY
     var body: some View {
         VStack(alignment: .leading ,spacing: 20){
             
@@ -33,13 +33,7 @@ struct LoginScreen: View {
                 //Next
                 
             } label: {
-                Text("LOG IN")
-                    .padding()
-                    .font(.system(size: 18, weight: .bold, design: .rounded))
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0)
-                    .foregroundColor(.white)
-                    .background(.black)
-                    .cornerRadius(8)
+                CustomText(text: "LOG IN")
             }
             
             Spacer()
@@ -48,6 +42,8 @@ struct LoginScreen: View {
         .padding()
     }
 }
+
+//MARK: - PREVIEW
 
 struct LoginScreen_Previews: PreviewProvider {
     static var previews: some View {

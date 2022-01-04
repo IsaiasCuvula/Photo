@@ -10,6 +10,7 @@
 		F171C38D27841B06005FDFFB /* RegisterNameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F171C38C27841B06005FDFFB /* RegisterNameScreen.swift */; };
 		F171C38F27841DD6005FDFFB /* HomeScreenDiscover.swift in Sources */ = {isa = PBXBuildFile; fileRef = F171C38E27841DD6005FDFFB /* HomeScreenDiscover.swift */; };
 		F171C39127841E99005FDFFB /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F171C39027841E99005FDFFB /* CustomText.swift */; };
+		F171C394278425FF005FDFFB /* NewPhotoTodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F171C393278425FF005FDFFB /* NewPhotoTodayView.swift */; };
 		F179C7B027839DE80019E6D9 /* photoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179C7AF27839DE80019E6D9 /* photoApp.swift */; };
 		F179C7B227839DE80019E6D9 /* LoggedOutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179C7B127839DE80019E6D9 /* LoggedOutScreen.swift */; };
 		F179C7B427839DE90019E6D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F179C7B327839DE90019E6D9 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		F171C38C27841B06005FDFFB /* RegisterNameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNameScreen.swift; sourceTree = "<group>"; };
 		F171C38E27841DD6005FDFFB /* HomeScreenDiscover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenDiscover.swift; sourceTree = "<group>"; };
 		F171C39027841E99005FDFFB /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
+		F171C393278425FF005FDFFB /* NewPhotoTodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPhotoTodayView.swift; sourceTree = "<group>"; };
 		F179C7AC27839DE80019E6D9 /* photo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F179C7AF27839DE80019E6D9 /* photoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoApp.swift; sourceTree = "<group>"; };
 		F179C7B127839DE80019E6D9 /* LoggedOutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutScreen.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		F179C7BE27839E730019E6D9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F171C393278425FF005FDFFB /* NewPhotoTodayView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				F179C7C22783A4000019E6D9 /* RegisterScreen.swift in Sources */,
 				F171C39127841E99005FDFFB /* CustomText.swift in Sources */,
+				F171C394278425FF005FDFFB /* NewPhotoTodayView.swift in Sources */,
 				F171C38F27841DD6005FDFFB /* HomeScreenDiscover.swift in Sources */,
 				F179C7B227839DE80019E6D9 /* LoggedOutScreen.swift in Sources */,
 				F179C7B027839DE80019E6D9 /* photoApp.swift in Sources */,
