@@ -13,25 +13,20 @@ struct LoginScreen: View {
     @State var passwordLogin = ""
   //MARK: - BODY
     var body: some View {
+        
         VStack(alignment: .leading ,spacing: 20){
             
-            Text("Log in")
-                .font(.system(size: 35, weight: .regular, design: .rounded))
-                .padding(.bottom, 20)
+            CustomNavBarTitle(text: "Log in")
             
             Group{
                 TextField("email", text: $emailLogin)
                 SecureField("password", text: $passwordLogin)
             }
-            .padding()
-            .foregroundColor(.black)
-            .overlay(RoundedRectangle(cornerRadius: 0).stroke(lineWidth: 3))
+            .modifier(StrokeForTextField())
             
             
             Button{
-                
                 //Next
-                
             } label: {
                 CustomText(text: "LOG IN")
             }

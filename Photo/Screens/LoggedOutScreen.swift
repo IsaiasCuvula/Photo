@@ -23,11 +23,7 @@ struct LoggedOutScreen: View {
                     
                 } label: {
                     Text("LOG IN")
-                        .padding()
-                        .foregroundColor(.black)
-                        .font(.system(size: 16,weight: .bold, design: .rounded))
-                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0)
-                        .overlay(RoundedRectangle(cornerRadius: 8).stroke( Color.black, lineWidth: 2))
+                        .modifier(ButtonWithStroke())
                 }
                 
                 

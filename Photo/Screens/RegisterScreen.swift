@@ -16,23 +16,17 @@ struct RegisterScreen: View {
     var body: some View {
         VStack(alignment: .leading ,spacing: 20){
             
-            Text("Register")
-                .font(.system(size: 35, weight: .regular, design: .rounded))
-                .padding(.bottom, 20)
+            CustomNavBarTitle(text: "Register")
             
             Group{
                 TextField("email", text: $emailRegister)
                 SecureField("password", text: $passwordRegister)
             }
-            .padding()
-            .foregroundColor(.black)
-            .overlay(RoundedRectangle(cornerRadius: 0).stroke(lineWidth: 3))
+            .modifier(StrokeForTextField())
             
             
             Button{
-                
                 //Next
-                
             } label: {
                 CustomText(text: "NEXT")
             }

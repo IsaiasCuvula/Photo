@@ -15,10 +15,7 @@ struct SearchScreen: View {
     var body: some View {
         VStack(alignment: .leading ,spacing: 20){
             
-            Text("Search")
-                .font(.system(size: 35, weight: .regular, design: .rounded))
-                .padding(.bottom, 20)
-            
+            CustomNavBarTitle(text: "Search")
            
             TextField("Search all photos", text: $searchQuery)
                 .padding()
