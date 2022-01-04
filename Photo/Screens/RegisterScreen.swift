@@ -9,28 +9,32 @@ import SwiftUI
 
 struct RegisterScreen: View {
     
-    @State var email = ""
-    @State var password = ""
+    @State var emailRegister = ""
+    @State var passwordRegister = ""
     
     
     var body: some View {
         VStack(alignment: .leading ,spacing: 20){
+            
             Text("Register")
-                .font(.system(size: 35, weight: .light, design: .rounded))
+                .font(.system(size: 35, weight: .regular, design: .rounded))
                 .padding(.bottom, 20)
             
-            TextField("email", text: $email)
-            SecureField("password", text: $password)
+            Group{
+                TextField("email", text: $emailRegister)
+                SecureField("password", text: $passwordRegister)
+            }
+            .padding()
+            .foregroundColor(.black)
+            .overlay(RoundedRectangle(cornerRadius: 0).stroke(lineWidth: 3))
+            
+            
             Button{
                 
+                //Next
+                
             } label: {
-                Text("NEXT")
-                    .padding()
-                    .font(.system(size: 18, weight: .bold, design: .rounded))
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0)
-                    .foregroundColor(.white)
-                    .background(.black)
-                    .cornerRadius(8)
+                CustomText(text: "NEXT")
             }
             Spacer()
             

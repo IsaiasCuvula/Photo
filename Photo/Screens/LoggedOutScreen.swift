@@ -49,7 +49,7 @@ struct LoggedOutScreen: View {
                 
             }//HSTACK
             .padding(.vertical, 40)
-            .padding(.horizontal, 16)
+            .padding(.horizontal, 20)
             
             
         }//VSTACK

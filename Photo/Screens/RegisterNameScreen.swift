@@ -1,39 +1,34 @@
 //
-//  LoginScreen.swift
+//  RegisterNameScreen.swift
 //  photo
 //
-//  Created by Isaias Cuvula on 3.01.22.
+//  Created by Isaias Cuvula on 4.01.22.
 //
 
 import SwiftUI
 
-struct LoginScreen: View {
+struct RegisterNameScreen: View {
     
-    @State var emailLogin = ""
-    @State var passwordLogin = ""
+    @State var name = ""
     
     var body: some View {
         VStack(alignment: .leading ,spacing: 20){
             
-            Text("Log in")
+            Text("Register")
                 .font(.system(size: 35, weight: .regular, design: .rounded))
                 .padding(.bottom, 20)
             
-            Group{
-                TextField("email", text: $emailLogin)
-                SecureField("password", text: $passwordLogin)
-            }
-            .padding()
-            .foregroundColor(.black)
-            .overlay(RoundedRectangle(cornerRadius: 0).stroke(lineWidth: 3))
+           
+            TextField("name", text: $name)
+                .padding()
+                .foregroundColor(.black)
+                .overlay(RoundedRectangle(cornerRadius: 0).stroke(lineWidth: 3))
             
             
             Button{
                 
-                //Next
-                
             } label: {
-                Text("LOG IN")
+                Text("SIGN UP")
                     .padding()
                     .font(.system(size: 18, weight: .bold, design: .rounded))
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0)
@@ -42,6 +37,9 @@ struct LoginScreen: View {
                     .cornerRadius(8)
             }
             
+            Text("By signing up, you agree to Photo's Terms of service and Privacy Policy.")
+                .font(.body)
+            
             Spacer()
             
         }
@@ -49,8 +47,8 @@ struct LoginScreen: View {
     }
 }
 
-struct LoginScreen_Previews: PreviewProvider {
+struct RegisterNameScreen_Previews: PreviewProvider {
     static var previews: some View {
-        LoginScreen()
+        RegisterNameScreen()
     }
 }
