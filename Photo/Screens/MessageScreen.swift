@@ -9,21 +9,29 @@ import SwiftUI
 
 struct MessageScreen: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            
-            CustomNavBarTitle(text: "Chats")
-            
-            ScrollView(.vertical, showsIndicators: false) {
-                VStack(alignment: .leading) {
-                    ForEach(0..<20, id: \.self){ num in
-                        MessageView()
-                        Divider()
+        NavigationView {
+            VStack(alignment: .leading) {
+                
+                CustomNavBarTitle(text: "Chats")
+                
+                ScrollView(.vertical, showsIndicators: false) {
+                    VStack(alignment: .leading) {
+                        ForEach(0..<20, id: \.self){ num in
+                            NavigationLink {
+                               SendMessageView()
+                            }label: {
+                                MessageView()
+                            }
+                            
+                            Divider()
+                        }
+                        
                     }
-                    
                 }
             }
+            .padding()
+            .navigationBarHidden(true)
         }
-        .padding()
     }
 }
 

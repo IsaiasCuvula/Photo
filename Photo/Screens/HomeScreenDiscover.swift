@@ -13,8 +13,6 @@ struct HomeScreenDiscover: View {
         Array(repeating: .init(.flexible(minimum: 120)), count: 2)
     }
     
-    
-    
     //MARK: - BODY
     var body: some View {
         NavigationView {

@@ -23,6 +23,7 @@
 		F179C7B727839DE90019E6D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F179C7B627839DE90019E6D9 /* Preview Assets.xcassets */; };
 		F179C7C02783A3EE0019E6D9 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179C7BF2783A3EE0019E6D9 /* LoginScreen.swift */; };
 		F179C7C22783A4000019E6D9 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179C7C12783A4000019E6D9 /* RegisterScreen.swift */; };
+		F19360692784EC1800431F5B /* SendMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19360682784EC1800431F5B /* SendMessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		F179C7B627839DE90019E6D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F179C7BF2783A3EE0019E6D9 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		F179C7C12783A4000019E6D9 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		F19360682784EC1800431F5B /* SendMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				F171C393278425FF005FDFFB /* NewPhotoTodayView.swift */,
 				F171C39F27843BD8005FDFFB /* PhotoOpenView.swift */,
 				F171C3A327844F8C005FDFFB /* MessageView.swift */,
+				F19360682784EC1800431F5B /* SendMessageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				F171C38F27841DD6005FDFFB /* HomeScreenDiscover.swift in Sources */,
 				F179C7B227839DE80019E6D9 /* LoggedOutScreen.swift in Sources */,
 				F179C7B027839DE80019E6D9 /* photoApp.swift in Sources */,
+				F19360692784EC1800431F5B /* SendMessageView.swift in Sources */,
 				F171C3A227844562005FDFFB /* Modifiers.swift in Sources */,
 				F171C38D27841B06005FDFFB /* RegisterNameScreen.swift in Sources */,
 				F171C3A427844F8C005FDFFB /* MessageView.swift in Sources */,
