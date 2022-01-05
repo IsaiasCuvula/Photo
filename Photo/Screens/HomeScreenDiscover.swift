@@ -13,6 +13,10 @@ struct HomeScreenDiscover: View {
         Array(repeating: .init(.flexible(minimum: 120)), count: 2)
     }
     
+    @State private var tabBar: UITabBar! = nil
+    
+   
+    
     //MARK: - BODY
     var body: some View {
         NavigationView {
@@ -30,7 +34,11 @@ struct HomeScreenDiscover: View {
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 20) {
                                 ForEach(0..<20, id: \.self){ num in
-                                    NewPhotoTodayView()
+                                    NavigationLink{
+                                        PhotoOpenView()
+                                    }label: {
+                                        NewPhotoTodayView()
+                                    }
                                 }
                             }
                         }
@@ -43,9 +51,13 @@ struct HomeScreenDiscover: View {
                         
                         LazyVGrid(columns: columns) {
                             ForEach(0..<20, id: \.self){ num in
-                                Image("background")
-                                    .resizable()
-                                    .scaledToFill()
+                                NavigationLink{
+                                    PhotoOpenView()
+                                }label: {
+                                    Image("background")
+                                        .resizable()
+                                        .scaledToFill()
+                                }
                             }
                         }
                     }
