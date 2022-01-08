@@ -26,11 +26,14 @@ struct SearchScreen: View {
             
         }
         .padding()
+        .navigationBarHidden(true)
     }
 }
 
 struct SearchScreen_Previews: PreviewProvider {
     static var previews: some View {
-        SearchScreen()
+        NavigationView{
+            SearchScreen()
+        }
     }
 }

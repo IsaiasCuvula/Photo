@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct MessageScreen: View {
+    
+    //MARK: - BODY
     var body: some View {
-        NavigationView {
             VStack(alignment: .leading) {
                 
                 CustomNavBarTitle(text: "Chats")
@@ -31,12 +32,13 @@ struct MessageScreen: View {
             }
             .padding()
             .navigationBarHidden(true)
-        }
     }
 }
 
 struct MessageScreen_Previews: PreviewProvider {
     static var previews: some View {
-        MessageScreen()
+        NavigationView{
+            MessageScreen()
+        }
     }
 }

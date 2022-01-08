@@ -24,6 +24,7 @@
 		F179C7C02783A3EE0019E6D9 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179C7BF2783A3EE0019E6D9 /* LoginScreen.swift */; };
 		F179C7C22783A4000019E6D9 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179C7C12783A4000019E6D9 /* RegisterScreen.swift */; };
 		F19360692784EC1800431F5B /* SendMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19360682784EC1800431F5B /* SendMessageView.swift */; };
+		F1D6EF1B278A152E00EAAF32 /* SimplePhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D6EF1A278A152E00EAAF32 /* SimplePhotoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		F179C7BF2783A3EE0019E6D9 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		F179C7C12783A4000019E6D9 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		F19360682784EC1800431F5B /* SendMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageView.swift; sourceTree = "<group>"; };
+		F1D6EF1A278A152E00EAAF32 /* SimplePhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePhotoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				F171C39F27843BD8005FDFFB /* PhotoOpenView.swift */,
 				F171C3A327844F8C005FDFFB /* MessageView.swift */,
 				F19360682784EC1800431F5B /* SendMessageView.swift */,
+				F1D6EF1A278A152E00EAAF32 /* SimplePhotoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				F171C38D27841B06005FDFFB /* RegisterNameScreen.swift in Sources */,
 				F171C3A427844F8C005FDFFB /* MessageView.swift in Sources */,
 				F179C7C02783A3EE0019E6D9 /* LoginScreen.swift in Sources */,
+				F1D6EF1B278A152E00EAAF32 /* SimplePhotoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

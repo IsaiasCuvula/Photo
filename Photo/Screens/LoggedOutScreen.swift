@@ -11,8 +11,9 @@ struct LoggedOutScreen: View {
     var body: some View {
         VStack{
             ZStack{
-                Image("background")
-                    .resizable()
+                Rectangle()
+                    .foregroundColor(Color("blueBackground"))
+                    
                 Image("photoLogo")
             }//ZSATCK
             

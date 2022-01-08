@@ -8,35 +8,45 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @State private var selection = 0
+    
     var body: some View {
        
-            TabView{
-                HomeScreenDiscover()
-                    .tabItem {
-                        Image(systemName: "house")
-                    }
-                
-                SearchScreen()
-                    .tabItem {
-                        Image(systemName: "magnifyingglass")
-                    }
-                
-                PhotoOpenView()
+        NavigationView {
+            TabView(selection: $selection){
+                    HomeScreenDiscover()
+                        .tabItem {
+                            Image(systemName: "house")
+                        }
+                        .tag(0)
+                    
+                    SearchScreen()
+                        .tabItem {
+                            Image(systemName: "magnifyingglass")
+                        }
+                        .tag(1)
+                    
+                    Text("Add Photo")
                     .tabItem {
                         Image(systemName: "plus")
+                        
                     }
-                
-                MessageScreen()
-                    .tabItem {
-                        Image(systemName: "message")
-                    }
-                
-                ProfileScreen()
-                    .tabItem {
-                        Image(systemName: "person")
-                    }
+                    .tag(2)
+                    
+                    MessageScreen()
+                        .tabItem {
+                            Image(systemName: "message")
+                        }
+                        .tag(3)
+                    
+                    ProfileScreen()
+                        .tabItem {
+                            Image(systemName: "person")
+                        }
+                        .tag(4)
             }
-        
+        }
     }
 }
 
