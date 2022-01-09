@@ -10,6 +10,7 @@ import SwiftUI
 struct SearchScreen: View {
     
     @State var searchQuery = ""
+    @ObservedObject var vm = AllUsersViewModel()
     
     //MARK: - BODY
     var body: some View {
@@ -23,6 +24,11 @@ struct SearchScreen: View {
                 .overlay(RoundedRectangle(cornerRadius: 0).stroke(lineWidth: 3))
             
             Spacer()
+            
+            ForEach(vm.users){ user in
+                Text(user.name)
+            }
+            
             
         }
         .padding()

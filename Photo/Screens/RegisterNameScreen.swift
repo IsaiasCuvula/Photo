@@ -9,6 +9,8 @@ import SwiftUI
 
 struct RegisterNameScreen: View {
     
+    let createAndLogin = CreateAndLogin()
+    
     let email: String
     let password: String
     @State var name = ""
@@ -35,6 +37,7 @@ struct RegisterNameScreen: View {
             
             Button{
                 if name != "" {
+                    createAndLogin.createAccount(email: self.email, password: self.password, name: self.name)
                     self.isPresented.toggle()
                 }else {
                     self.showAlert = true

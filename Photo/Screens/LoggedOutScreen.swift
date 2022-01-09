@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct LoggedOutScreen: View {
+    
+    @ObservedObject private var vm = UserDataViewModel()
+    
+    
+    //MARK: - BODY
     var body: some View {
         NavigationView {
             VStack{
@@ -36,13 +41,12 @@ struct LoggedOutScreen: View {
                 }//HSTACK
                 .padding(.vertical, 40)
                 .padding(.horizontal, 20)
-                
-                
             }//VSTACK
             .padding(0)
-        .ignoresSafeArea()
+            .ignoresSafeArea()
         }
     }
+    
 }
 
 struct LoggedOutScreen_Previews: PreviewProvider {

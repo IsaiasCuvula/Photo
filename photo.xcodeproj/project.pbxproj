@@ -17,6 +17,9 @@
 		F171C3A027843BD8005FDFFB /* PhotoOpenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F171C39F27843BD8005FDFFB /* PhotoOpenView.swift */; };
 		F171C3A227844562005FDFFB /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F171C3A127844562005FDFFB /* Modifiers.swift */; };
 		F171C3A427844F8C005FDFFB /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F171C3A327844F8C005FDFFB /* MessageView.swift */; };
+		F176359F278B4B5400B63BAE /* CreateAndLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176359E278B4B5400B63BAE /* CreateAndLogin.swift */; };
+		F17635A1278B5A5600B63BAE /* UserDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17635A0278B5A5600B63BAE /* UserDataViewModel.swift */; };
+		F17635A3278B6AFD00B63BAE /* AllUsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17635A2278B6AFD00B63BAE /* AllUsersViewModel.swift */; };
 		F179C7B027839DE80019E6D9 /* photoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179C7AF27839DE80019E6D9 /* photoApp.swift */; };
 		F179C7B227839DE80019E6D9 /* LoggedOutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179C7B127839DE80019E6D9 /* LoggedOutScreen.swift */; };
 		F179C7B427839DE90019E6D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F179C7B327839DE90019E6D9 /* Assets.xcassets */; };
@@ -49,6 +52,9 @@
 		F171C39F27843BD8005FDFFB /* PhotoOpenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOpenView.swift; sourceTree = "<group>"; };
 		F171C3A127844562005FDFFB /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		F171C3A327844F8C005FDFFB /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		F176359E278B4B5400B63BAE /* CreateAndLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAndLogin.swift; sourceTree = "<group>"; };
+		F17635A0278B5A5600B63BAE /* UserDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataViewModel.swift; sourceTree = "<group>"; };
+		F17635A2278B6AFD00B63BAE /* AllUsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUsersViewModel.swift; sourceTree = "<group>"; };
 		F179C7AC27839DE80019E6D9 /* photo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F179C7AF27839DE80019E6D9 /* photoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoApp.swift; sourceTree = "<group>"; };
 		F179C7B127839DE80019E6D9 /* LoggedOutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutScreen.swift; sourceTree = "<group>"; };
@@ -179,6 +185,9 @@
 		F1890DA5278B48F400E0B715 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F176359E278B4B5400B63BAE /* CreateAndLogin.swift */,
+				F17635A0278B5A5600B63BAE /* UserDataViewModel.swift */,
+				F17635A2278B6AFD00B63BAE /* AllUsersViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -267,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F179C7C22783A4000019E6D9 /* RegisterScreen.swift in Sources */,
+				F176359F278B4B5400B63BAE /* CreateAndLogin.swift in Sources */,
 				F171C39A27843A67005FDFFB /* SearchScreen.swift in Sources */,
 				F171C398278439B6005FDFFB /* MainView.swift in Sources */,
 				F171C39E27843A91005FDFFB /* MessageScreen.swift in Sources */,
@@ -276,9 +286,11 @@
 				F171C38F27841DD6005FDFFB /* HomeScreenDiscover.swift in Sources */,
 				F179C7B227839DE80019E6D9 /* LoggedOutScreen.swift in Sources */,
 				F179C7B027839DE80019E6D9 /* photoApp.swift in Sources */,
+				F17635A3278B6AFD00B63BAE /* AllUsersViewModel.swift in Sources */,
 				F19360692784EC1800431F5B /* SendMessageView.swift in Sources */,
 				F171C3A227844562005FDFFB /* Modifiers.swift in Sources */,
 				F171C38D27841B06005FDFFB /* RegisterNameScreen.swift in Sources */,
+				F17635A1278B5A5600B63BAE /* UserDataViewModel.swift in Sources */,
 				F171C3A427844F8C005FDFFB /* MessageView.swift in Sources */,
 				F179C7C02783A3EE0019E6D9 /* LoginScreen.swift in Sources */,
 				F1D6EF1B278A152E00EAAF32 /* SimplePhotoView.swift in Sources */,

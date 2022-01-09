@@ -9,10 +9,12 @@ import SwiftUI
 
 struct ProfileScreen: View {
     
-    let name = "Isaias"
+    //let name = "Isaias"
     var columns: [GridItem] {
         Array(repeating: .init(.flexible(minimum: 120)), count: 2)
     }
+    @State var logOut = false
+    @ObservedObject private var vm = UserDataViewModel()
     
     //MARK: - BODY
     var body: some View {
@@ -25,7 +27,7 @@ struct ProfileScreen: View {
                         .frame(width: 120, height: 120)
                         .cornerRadius(120)
                     
-                    Text(name)
+                    Text(vm.user?.name ?? "")
                         .font(.system(size: 35, design: .rounded))
                     
                     Text("SAN FRANCISCO, CA")
@@ -35,7 +37,7 @@ struct ProfileScreen: View {
                     Button{
                         //Follow action
                     } label: {
-                        CustomText(text: "FALLOW \(name.uppercased())")
+                        CustomText(text: "FALLOW \(vm.user?.name.uppercased() ?? "")")
                     }
                     
                     NavigationLink{
@@ -44,6 +46,14 @@ struct ProfileScreen: View {
                         Text("MESSAGE")
                             .modifier(ButtonWithStroke())
                     }
+                    
+                    Button{
+                        logOut.toggle()
+                    } label: {
+                        Text("LOG OUT")
+                            .modifier(ButtonWithStroke())
+                    }
+                    
                     Spacer()
                     
                     LazyVGrid(columns: columns) {
@@ -57,6 +67,18 @@ struct ProfileScreen: View {
                     }
                 }
                 .padding(.horizontal)
+                .confirmationDialog("Log Out", isPresented: $logOut) {
+                    
+                    Button{
+                        vm.signOut()
+                        self.vm.isUserLogedOut = false
+                    }label: {
+                        Text("Log Out \(vm.user?.name ?? "")")
+                    }
+                }
+                .fullScreenCover(isPresented: $vm.isUserLogedOut, onDismiss: nil) {
+                    LoggedOutScreen()
+                }
             }
         }.navigationBarHidden(true)
         

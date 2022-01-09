@@ -13,10 +13,6 @@ struct HomeScreenDiscover: View {
         Array(repeating: .init(.flexible(minimum: 120)), count: 2)
     }
     
-    @State private var tabBar: UITabBar! = nil
-    
-   
-    
     //MARK: - BODY
     var body: some View {
         
@@ -63,8 +59,6 @@ struct HomeScreenDiscover: View {
         }
         .padding()
         .navigationBarHidden(true)
-        
-        
     }
 }
 
