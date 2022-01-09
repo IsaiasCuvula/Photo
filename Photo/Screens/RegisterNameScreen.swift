@@ -9,6 +9,8 @@ import SwiftUI
 
 struct RegisterNameScreen: View {
     
+    let email: String
+    let password: String
     @State var name = ""
     @Environment(\.presentationMode) var presentationMode
     @State private var isPresented = false
@@ -57,6 +59,6 @@ struct RegisterNameScreen: View {
 
 struct RegisterNameScreen_Previews: PreviewProvider {
     static var previews: some View {
-        RegisterNameScreen()
+        RegisterNameScreen(email: "", password: "")
     }
 }

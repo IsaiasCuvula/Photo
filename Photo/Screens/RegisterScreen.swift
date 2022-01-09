@@ -32,16 +32,10 @@ struct RegisterScreen: View {
             
             
             Button {
-                self.isPresented.toggle()
-            } label: {
-                CustomText(text: "NEXT")
-            }
-            .simultaneousGesture(TapGesture().onEnded({
-                
                 if emailRegister != "" && passwordRegister != "" {
                     
-                    self.showAlert = false
-                    return
+                    self.isPresented.toggle()
+                    
                 }else  {
                     
                     self.showAlert = true
@@ -52,8 +46,12 @@ struct RegisterScreen: View {
                 }
                 
                 
-            }))
-            .fullScreenCover(isPresented: $isPresented, onDismiss: nil, content: RegisterNameScreen.init)
+            } label: {
+                CustomText(text: "NEXT")
+            }.fullScreenCover(isPresented: $isPresented, onDismiss: nil) {
+                RegisterNameScreen(email: emailRegister, password: passwordRegister)
+                
+            }
             .alert(isPresented: $showAlert) {
                 Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("OK")))
             }
