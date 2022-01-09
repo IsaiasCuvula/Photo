@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>700286254498-fqq008j6o31fal2oif2e4r42bq7dd8vq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.700286254498-fqq008j6o31fal2oif2e4r42bq7dd8vq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCQvZy1W0PicwO3mXyaa9Ny2qMfoHkvrtI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>700286254498</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.bersyte.photo</string>
+	<key>PROJECT_ID</key>
+	<string>photo-b309d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>photo-b309d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:700286254498:ios:c81d90e868c6a3338686fb</string>
+</dict>
+</plist>

@@ -9,45 +9,39 @@ import SwiftUI
 
 struct LoggedOutScreen: View {
     var body: some View {
-        VStack{
-            ZStack{
-                Rectangle()
-                    .foregroundColor(Color("blueBackground"))
+        NavigationView {
+            VStack{
+                ZStack{
+                    Rectangle()
+                        .foregroundColor(Color("blueBackground"))
+                    Image("photoLogo")
+                }//ZSATCK
+                
+                HStack(spacing: 4){
+                    NavigationLink{
+                       LoginScreen()
+                    } label: {
+                        Text("LOG IN")
+                            .modifier(ButtonWithStroke())
+                    }
                     
-                Image("photoLogo")
-            }//ZSATCK
-            
-            HStack(spacing: 4){
-                Button{
+                    Spacer()
                     
-                    //LoginScreen()
+                    NavigationLink{
+                        RegisterScreen()
+                    } label: {
+                        CustomText(text: "REGISTER")
+                    }
                     
-                } label: {
-                    Text("LOG IN")
-                        .modifier(ButtonWithStroke())
-                }
+                }//HSTACK
+                .padding(.vertical, 40)
+                .padding(.horizontal, 20)
                 
                 
-                Spacer()
-                
-                Button{
-                    
-                    //RegisterScreen()
-                    
-                } label: {
-                    CustomText(text: "REGISTER")
-                }
-                
-                
-                
-            }//HSTACK
-            .padding(.vertical, 40)
-            .padding(.horizontal, 20)
-            
-            
-        }//VSTACK
-        .padding(0)
+            }//VSTACK
+            .padding(0)
         .ignoresSafeArea()
+        }
     }
 }
 
